@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Tic Tac Toe</h1>
+
+  <!-- Menu for selecting game mode -->
+  <div class="menu">
+    <h2>Select Game Mode</h2>
+    <button class="mode" data-mode="pvp">Player vs Player</button>
+    <button class="mode" data-mode="ai-easy">Player vs AI (Easy)</button>
+    <button class="mode" data-mode="ai-medium">Player vs AI (Medium)</button>
+    <button class="mode" data-mode="ai-hard">Player vs AI (Hard)</button>
+  </div>
+
+  <!-- Game board (hidden initially) -->
+  <div class="board" style="display: none;">
+    <div class="cell" data-index="0"></div>
+    <div class="cell" data-index="1"></div>
+    <div class="cell" data-index="2"></div>
+    <div class="cell" data-index="3"></div>
+    <div class="cell" data-index="4"></div>
+    <div class="cell" data-index="5"></div>
+    <div class="cell" data-index="6"></div>
+    <div class="cell" data-index="7"></div>
+    <div class="cell" data-index="8"></div>
+  </div>
+
+  <!-- Status message -->
+  <div class="status"></div>
+
+  <!-- Restart game button -->
+  <button class="reset" style="display: none;">Restart Game</button>
+
+  <!-- Message box for win/tie -->
+  <div class="message-box" style="display: none;">
+    <div class="message-content">
+      <p class="message"></p>
+      <button class="restart">Restart Game</button>
+      <button class="change-mode">Change Mode</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
